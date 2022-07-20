@@ -6,20 +6,20 @@ func main() {
 
 	//strings
 
-	var nameOne string = "stringy"
-	var nameTwo = "lui"
-	var nameThree string
+	// var nameOne string = "stringy"
+	// var nameTwo = "lui"
+	// var nameThree string
 
-	fmt.Println(nameOne, nameTwo, nameThree)
+	// fmt.Println(nameOne, nameTwo, nameThree)
 
-	nameOne = "peach"
-	nameThree = "bowser"
+	// nameOne = "peach"
+	// nameThree = "bowser"
 
-	fmt.Println(nameOne, nameTwo, nameThree)
+	// fmt.Println(nameOne, nameTwo, nameThree)
 
-	nameFour := "yoshi"
+	// nameFour := "yoshi"
 
-	fmt.Println(nameFour)
+	// fmt.Println(nameFour)
 
 	//ints
 
@@ -28,5 +28,10 @@ func main() {
 	ageThree := 40
 
 	fmt.Println(ageOne, ageTwo, ageThree)
+
+	// bits & memory
+	var numOne int8 = 25
+	var numTwo int8 = -128
+	var numThree uint16 = 256
 
 }
