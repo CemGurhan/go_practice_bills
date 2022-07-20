@@ -1,21 +1,43 @@
 package main
 
-import (
-	"fmt"
-)
-
-var score = 99.5
+import "fmt"
 
 func main() {
 
-	sayHello("mario")
+	menu := map[string]float64{
+		"soup":          4.99,
+		"pie":           7.99,
+		"salad":         6.99,
+		"tofee pudding": 3.55,
+	}
 
-	for _, v := range points {
+	fmt.Println(menu)
+	fmt.Println(menu["pie"])
 
-		fmt.Println(v)
+	// looping maps
+
+	for k, v := range menu {
+
+		fmt.Println(k, "-", v)
 
 	}
 
-	showScore()
+	// ints as key type
+
+	phonebook := map[int]string{
+
+		26667: "mario",
+		34589: "luigi",
+		89992: "peach",
+	}
+
+	fmt.Println(phonebook)
+	fmt.Println(phonebook[26667])
+
+	phonebook[34589] = "bowser"
+	fmt.Println(phonebook)
+
+	phonebook[89992] = "yoshi"
+	fmt.Println(phonebook)
 
 }
