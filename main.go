@@ -4,40 +4,29 @@ import "fmt"
 
 func main() {
 
-	//strings
+	age := 23
+	name := "Cem"
 
-	// var nameOne string = "stringy"
-	// var nameTwo = "lui"
-	// var nameThree string
+	fmt.Print("hello, ")
+	fmt.Print("world! \n")
+	fmt.Print("new line \n")
 
-	// fmt.Println(nameOne, nameTwo, nameThree)
+	//println
 
-	// nameOne = "peach"
-	// nameThree = "bowser"
+	fmt.Println("115")
+	fmt.Println("511")
+	fmt.Println("My name is", name, "and my age is", age)
 
-	// fmt.Println(nameOne, nameTwo, nameThree)
+	//printf
 
-	// nameFour := "yoshi"
+	fmt.Printf("My name is %v and my age is %v \n", name, age)
+	fmt.Printf("My name is %q and my age is %q \n", name, age)
+	fmt.Printf("age is of type %T", age)
+	fmt.Printf("you scored %f points \n", 225.33)
+	fmt.Printf("you scored %0.2f points \n", 225.33)
 
-	// fmt.Println(nameFour)
-
-	//ints
-
-	var ageOne int = 20
-	var ageTwo = 30
-	ageThree := 40
-
-	fmt.Println(ageOne, ageTwo, ageThree)
-
-	// bits & memory
-	// var numOne int8 = 25
-	// var numTwo int8 = -128
-	// var numThree uint16 = 256
-
-	var scoreOne float32 = 2.9991
-	var scoreTwo float64 = 12458493039.2222212345
-	scoreThree := 1.5
-
-	fmt.Println(scoreOne, scoreTwo, scoreThree)
+	// sprintf
+	str := fmt.Sprintf("My name is %v and my age is %v \n", name, age)
+	fmt.Println("the saved string is:", str)
 
 }
