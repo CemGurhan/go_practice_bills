@@ -2,37 +2,20 @@ package main
 
 import (
 	"fmt"
-	"strings"
 )
 
-func getInitials(n string) (string, string) {
-
-	capital := strings.ToUpper(n)
-	names := strings.Split(capital, " ")
-
-	var initials []string
-
-	for _, v := range names {
-		initials = append(initials, v[:1])
-	}
-
-	if len(initials) > 1 {
-		return initials[0], initials[1]
-	}
-
-	return initials[0], "_"
-
-}
+var score = 99.5
 
 func main() {
 
-	fn1, sn1 := getInitials("tifa lockhart")
-	fmt.Println(fn1, sn1)
+	sayHello("mario")
 
-	fn2, sn2 := getInitials("cem gurhan")
-	fmt.Println(fn2, sn2)
+	for _, v := range points {
 
-	fn3, sn3 := getInitials("barret")
-	fmt.Println(fn3, sn3)
+		fmt.Println(v)
+
+	}
+
+	showScore()
 
 }
