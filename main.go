@@ -4,29 +4,34 @@ import "fmt"
 
 func main() {
 
-	age := 23
-	name := "Cem"
+	// var ages [3]int = [3]int{20,25,30}
+	var ages = [3]int{20, 25, 30}
 
-	fmt.Print("hello, ")
-	fmt.Print("world! \n")
-	fmt.Print("new line \n")
+	names := [4]string{"yoshi", "mario", "peach", "bowser"}
 
-	//println
+	names[1] = "luigi"
 
-	fmt.Println("115")
-	fmt.Println("511")
-	fmt.Println("My name is", name, "and my age is", age)
+	fmt.Println(ages, len(ages), cap(ages))
+	fmt.Println(names, len(names), cap(names))
 
-	//printf
+	//slices
 
-	fmt.Printf("My name is %v and my age is %v \n", name, age)
-	fmt.Printf("My name is %q and my age is %q \n", name, age)
-	fmt.Printf("age is of type %T", age)
-	fmt.Printf("you scored %f points \n", 225.33)
-	fmt.Printf("you scored %0.2f points \n", 225.33)
+	var scores = []int{100, 50, 60}
+	scores[2] = 25
+	scores = append(scores, 85)
 
-	// sprintf
-	str := fmt.Sprintf("My name is %v and my age is %v \n", name, age)
-	fmt.Println("the saved string is:", str)
+	fmt.Println(scores, len(scores), cap(scores))
+
+	//slice ranges
+
+	var rangeOne []string = names[1:3]
+	rangeTwo := names[2:]
+	rangeThree := names[:3]
+
+	fmt.Println(rangeOne, rangeTwo, rangeThree)
+
+	rangeOne = append(rangeOne, "Koopa")
+
+	fmt.Println(rangeOne)
 
 }
